@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 300px;
+    line-height: 125%;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    background: url(images/bg-hero-desktop.svg);
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    padding-bottom: 3rem;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 20px;
+    width: 85%;
+    max-width: 1070px;
+    min-width: 560px;
+}
+
+.first-section-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coloum {
+    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.head {
+    color: hsl(192, 100%, 9%); 
+    font-weight: 900;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+    line-height: 135%;
+}
+
+.detail {
+    font-weight: 600;
+    color: hsla(192, 100%, 9%, 0.774);
+    width: 100%;
+}
+
+.button {
+   width: 200px;
+   height: 40px;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: hsl(322, 100%, 66%);
+   margin: 30px;
+   border-radius: 2rem;
+   cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsla(322, 100%, 66%, 0.774);
+}
+
+
+.free { 
+    width: 125px;
+    height: 35px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 30px;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.free:hover {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+
+.screen {
+    width: 40%;
+}
+
+.section {
+    padding: 2rem;
+    width: 80%;
+    margin: 20px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: #0000000e 0em 0px 6px 5px;
+}
+
+.text {
+    width: 50%;
+    max-width: 340px;
+}
+
+.sec-head {
+    color: hsl(192, 100%, 9%); 
+    font-weight: 900;
+    margin: 5px 0px 15px 0px;
+    line-height: 135%;
+}
+
+.sec-detail {
+    font-weight: 600;
+    color: hsla(192, 100%, 9%, 0.774);
+}
+
+.grow {
+    width: 35%;
+
+}
+
+.section-four {
+    padding: 2rem 0px 0rem 0px;   
+    width: 40%;
+    min-width: 440px;
+    max-width: 500px;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: #0000000e 0em 0px 6px 5px;
+    position: relative;
+    top: 60px;
+}
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.sec-o {
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 10rem;
+}
+
+.bot-svg {
+    margin-right: 10px;
+}
+
+.footer-tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+    height: 150px;
+}
+
+.tag:hover {
+    cursor: pointer;
+    text-decoration: underline white;
+} 
+
+.font-awesome {
+    display: flex;
+    flex-direction: row;
+    padding-top: 13rem;
+    margin-bottom: 120px;
+}
+
+.brand {
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.brand:hover {
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+} 
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.font-awesome .brand:nth-child(1)  i {
+    position: relative;
+    left: 3.5px;
+}
+
+.font-awesome .brand:nth-child(2)  i {
+    position: relative;
+    left: 2px;
+}
+
+.font-awesome .brand:nth-child(3)  i {
+    position: relative;
+    left: 1.5px;
+}
+
+
+@media (max-width:599px) {
+
+    body {
+        text-align: center;
+    }
+
+    .first {
+        background: url(images/bg-hero-mobile.svg);
+        background-size: contain;
+        background-color: hsl(193, 100%, 96%);
+    }
+    
+    .navbar {
+        margin: 40px 0px 30px 0px;
+        width: 85%;
+        min-width: auto;
+    }
+    
+    .logo {
+        width: 50%;
+    }
+
+    .first-section-two {
+        flex-direction: column;
+    }
+    
+    .coloum {
+        width: 80%;
+        min-width: auto;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .button:hover {
+        background-color: hsla(322, 100%, 66%, 0.774);
+    }
+    
+    
+    .free { 
+        margin: 0px;
+    }
+          
+    .screen {
+        width: 85%;
+    }
+    
+    .section {
+        width: 70%;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+    
+    .text {
+        width: 100%;
+        max-width: 340px;
+    }
+    
+    .sec-head {
+        width: 100%;
+    }
+    
+    .sec-detail {
+        width: 100%;
+    }
+    
+    .grow {
+        width: 70%;
+    
+    }
+    
+    .section-four {
+        width: 70%;
+        min-width: 250px;
+    }
+    
+    .footer {
+        width: 85%;
+        padding-left: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        text-align: left;
+        align-items: start;
+        padding-bottom: 3rem;
+    }
+    
+    .sec-o {
+        width: 90%;
+        min-width: 230px;
+        margin-bottom: 2rem;
+    }
+    
+    
+    .footer-tags {
+        justify-content: space-between;
+        padding-top: 0rem;
+        height: 70px;
+    }
+       
+    .font-awesome {
+        padding-top: 0rem;
+        margin-bottom: 0px;
+    }
+    
+    .foot {
+        gap: 1rem;
+        width: 85%;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+}
